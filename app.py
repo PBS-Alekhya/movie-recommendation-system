@@ -22,7 +22,7 @@ def suggest_movies(film_name):
     
     return suggested_titles, suggested_posters
 
-st.header('AI-Powered Movie Recommender')
+st.header(' Movie Recommender System ')
 movie_data = pd.DataFrame(pickle.load(open('movie_list.pkl', 'rb')))
 similarity_matrix = pickle.load(open('similarity.pkl', 'rb'))
 
